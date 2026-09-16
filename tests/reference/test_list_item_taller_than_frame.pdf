@@ -1,0 +1,562 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/Contents 10 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/Contents 11 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/PageLabels 12 0 R /PageMode /UseNone /Pages 9 0 R /Type /Catalog
+>>
+endobj
+8 0 obj
+<<
+/Author () /CreationDate (D:20000101000000+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Splitting a list item that does not fit) /Trapped /False
+>>
+endobj
+9 0 obj
+<<
+/Count 2 /Kids [ 5 0 R 6 0 R ] /Type /Pages
+>>
+endobj
+10 0 obj
+<<
+/Length 3295
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+.133333 .133333 .133333 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 99.20417 0 Td (Splitting a list item that does not fit) Tj T* -99.20417 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 699.0236 cm
+Q
+q
+1 0 0 1 57.02362 699.0236 cm
+Q
+q
+1 0 0 1 57.02362 133.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 551 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 551 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (This item holds more examples than will fit in a frame, so it has to be broken across pages.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 533 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 1:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 451.8 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 1) Tj T* (line 2 of example 1) Tj T* (line 3 of example 1) Tj T* (line 4 of example 1) Tj T* (line 5 of example 1) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 425.8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 2:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 344.6 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 2) Tj T* (line 2 of example 2) Tj T* (line 3 of example 2) Tj T* (line 4 of example 2) Tj T* (line 5 of example 2) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 318.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 3:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 237.4 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 3) Tj T* (line 2 of example 3) Tj T* (line 3 of example 3) Tj T* (line 4 of example 3) Tj T* (line 5 of example 3) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 211.4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 4:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 130.2 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 4) Tj T* (line 2 of example 4) Tj T* (line 3 of example 4) Tj T* (line 4 of example 4) Tj T* (line 5 of example 4) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 104.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 5:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 23 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 5) Tj T* (line 2 of example 5) Tj T* (line 3 of example 5) Tj T* (line 4 of example 5) Tj T* (line 5 of example 5) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 6:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 62.69291 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 57.33071 Tm  T* ET
+q
+1 0 0 1 23 18.13071 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 48 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F3 10 Tf 12 TL (line 1 of example 6) Tj T* (line 2 of example 6) Tj T* (line 3 of example 6) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+Q
+ 
+endstream
+endobj
+11 0 obj
+<<
+/Length 3524
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 92.69291 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 659.3307 Tm  T* ET
+q
+1 0 0 1 23 632.1307 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 36 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F3 10 Tf 12 TL (line 4 of example 6) Tj T* (line 5 of example 6) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 606.1307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 7:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 524.9307 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 7) Tj T* (line 2 of example 7) Tj T* (line 3 of example 7) Tj T* (line 4 of example 7) Tj T* (line 5 of example 7) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 498.9307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 8:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 417.7307 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 8) Tj T* (line 2 of example 8) Tj T* (line 3 of example 8) Tj T* (line 4 of example 8) Tj T* (line 5 of example 8) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 391.7307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 9:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 310.5307 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 9) Tj T* (line 2 of example 9) Tj T* (line 3 of example 9) Tj T* (line 4 of example 9) Tj T* (line 5 of example 9) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 284.5307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 10:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 203.3307 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 10) Tj T* (line 2 of example 10) Tj T* (line 3 of example 10) Tj T* (line 4 of example 10) Tj T* (line 5 of example 10) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 177.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 11:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 96.13071 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F3 10 Tf 12 TL (line 1 of example 11) Tj T* (line 2 of example 11) Tj T* (line 3 of example 11) Tj T* (line 4 of example 11) Tj T* (line 5 of example 11) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 70.13071 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Example 12:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -35.06929 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.941176 .972549 1 rg
+n -6 -6 454.0283 96 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 74 Tm /F3 10 Tf 12 TL (line 1 of example 12) Tj T* (line 2 of example 12) Tj T* (line 3 of example 12) Tj T* (line 4 of example 12) Tj T* (line 5 of example 12) Tj T* (line 6 of example 12) Tj T* (line 7 of example 12) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 86.69291 cm
+Q
+q
+1 0 0 1 57.02362 74.69291 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (A second item, so that the first one is not the last thing here.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 74.69291 cm
+Q
+ 
+endstream
+endobj
+12 0 obj
+<<
+/Nums [ 0 13 0 R 1 14 0 R ]
+>>
+endobj
+13 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+14 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000061 00000 n 
+0000000112 00000 n 
+0000000219 00000 n 
+0000000328 00000 n 
+0000000433 00000 n 
+0000000637 00000 n 
+0000000841 00000 n 
+0000000928 00000 n 
+0000001221 00000 n 
+0000001286 00000 n 
+0000004633 00000 n 
+0000008209 00000 n 
+0000008259 00000 n 
+0000008293 00000 n 
+trailer
+<<
+/ID 
+[<ba16f88dc8663a7387807d7070b4d340><ba16f88dc8663a7387807d7070b4d340>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 8 0 R
+/Root 7 0 R
+/Size 15
+>>
+startxref
+8327
+%%EOF
