@@ -371,6 +371,16 @@ class SplitTable(DelayedTable):
 
             bullet = self.data[0][0]
             text = self.data[0][1]
+
+            # wrap() charges padding and spacing that the scan below does
+            # not.  If the real height falls between the two, the scan never
+            # reaches h and no break point is found, so search against the
+            # height the scan can see.
+            _w2, scanned = _listWrapOn(text, w - dw, None)
+            slack = _h - (scanned + dh)
+            if scanned + dh <= h < _h and slack > 0:
+                h -= slack
+
             for l in range(0, len(text)):
                 _, fh = _listWrapOn(text[: l + 1], w - dw, None)
                 if fh + dh > h:
