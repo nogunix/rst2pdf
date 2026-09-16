@@ -371,6 +371,21 @@ class SplitTable(DelayedTable):
 
             bullet = self.data[0][0]
             text = self.data[0][1]
+
+            # wrap() charges table padding and inter-flowable spacing that
+            # the _listWrapOn() scan below does not.  When the real height
+            # lands between the two measurements the scan never exceeds h,
+            # no break point is found, and we fall through to splitting a
+            # one-row Table, which returns [] -- ReportLab then postpones
+            # onto a fresh page, measures the same way, and wedges until it
+            # raises LayoutError.  Look for the break point against the
+            # height the scan can actually see so that one is always found
+            # whenever wrap() says the item does not fit.
+            _w2, scanned = _listWrapOn(text, w - dw, None)
+            slack = _h - (scanned + dh)
+            if scanned + dh <= h < _h and slack > 0:
+                h -= slack
+
             for l in range(0, len(text)):
                 _, fh = _listWrapOn(text[: l + 1], w - dw, None)
                 if fh + dh > h:
