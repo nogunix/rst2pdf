@@ -215,6 +215,41 @@ class OddEven(Flowable):
         return []
 
 
+def sized_table(data, colWidths, style, w, **kwargs):
+    """Build a table, saying what a column of no declared width means.
+
+    A column written as None in a stylesheet means "the rest of the row".
+    It is how every one-row, two-column table rst2pdf builds is laid out:
+    the first column is a fixed gutter -- a bullet, a definition-term
+    indent, an admonition's border -- and the second takes what is left.
+
+    ReportLab reads None differently.  To it an undefined column is as wide
+    as its content turns out to be, and it only arrives at our meaning by
+    way of a fallback width algorithm it runs when some cell holds a thing
+    whose width cannot be worked out in advance -- a paragraph, usually.
+    That fallback hands the undefined column exactly the space the defined
+    ones leave, which is why these tables normally come out right.
+
+    When every cell is something ReportLab can measure, the fallback never
+    runs and the column is sized from its content.  A cell holding nothing
+    but a Spacer then comes out zero wide, which is narrower than the
+    padding the cell itself charges, and ReportLab refuses the negative
+    width that leaves.  Share the space out ourselves in that case; it is
+    the same number the fallback would have reached.
+
+    Returns the table and the widths it was built with.
+    """
+    t = Table(data, colWidths=colWidths, style=style, **kwargs)
+    if None not in colWidths or t._hasVariWidthElements():
+        return t, colWidths
+    spare = w - sum(x for x in colWidths if x is not None)
+    if spare <= 0:
+        return t, colWidths
+    share = spare / colWidths.count(None)
+    colWidths = [share if x is None else x for x in colWidths]
+    return Table(data, colWidths=colWidths, style=style, **kwargs), colWidths
+
+
 class DelayedTable(Table):
     """A flowable that inserts a table for which it has the data.
 
@@ -253,10 +288,11 @@ class DelayedTable(Table):
         # adjust=functools.partial(styles.adjustUnits, total=w)
         self.colWidths = [adjust(x) for x in self._colWidths]
         # colWidths = [_w * _tw for _w in self.colWidths]
-        self.t = Table(
+        self.t, self.colWidths = sized_table(
             self.data,
-            colWidths=self.colWidths,
-            style=self.style,
+            self.colWidths,
+            self.style,
+            w,
             repeatRows=self.repeatrows,
             splitByRow=True,
         )
@@ -400,10 +436,11 @@ class SplitTable(DelayedTable):
 
                         while l > 0:
                             if not text[l - 1].getKeepWithNext():
-                                first_t = Table(
+                                first_t, _cw = sized_table(
                                     [[bullet, text[:l]]],
-                                    colWidths=self.colWidths,
-                                    style=self.style,
+                                    self.colWidths,
+                                    self.style,
+                                    w,
                                 )
                                 try:
                                     _w, _h = first_t.wrap(w, h)
@@ -443,12 +480,13 @@ class SplitTable(DelayedTable):
                             l3 = []
                     else:
                         l3 = [
-                            Table(
+                            sized_table(
                                 [[bullet, text[:l] + [l2[0]]]],
-                                colWidths=self.colWidths,
+                                self.colWidths,
+                                self.style,
+                                w,
                                 rowHeights=[h],
-                                style=self.style,
-                            )
+                            )[0]
                         ]
                         if l2[1:] + text[l + 1 :]:
                             l3.append(
