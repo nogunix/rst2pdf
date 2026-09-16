@@ -15,7 +15,6 @@ are combined into the instantiated object.
 
 from copy import copy
 
-import docutils
 from reportlab.platypus import Paragraph, TableStyle
 import sphinx
 
@@ -125,7 +124,10 @@ class HandleSphinxIndex(SphinxHandler, sphinx.addnodes.index):
     def gather_elements(self, client, node, style):
         try:
             for entry in node['entries']:
-                client.pending_targets.append(docutils.nodes.make_id(entry[2]))
+                # Use the id Sphinx assigned; rewriting it names a target
+                # that does not exist.
+                if entry[2]:
+                    client.pending_targets.append(entry[2])
         except IndexError:
             if node['entries']:
                 log.error(
