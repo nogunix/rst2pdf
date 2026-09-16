@@ -452,6 +452,28 @@ class PDFBuilder(Builder):
                 pass
 
 
+def index_link(text, uri):
+    """Build the reStructuredText for one link of the generated index.
+
+    ``uri`` is what Sphinx handed us in the index entry, and it already
+    carries the '#' plus the identifier of the node it points at.  It has to
+    be used exactly as given: the identifier was minted by whoever emitted
+    the destination, and any normalisation applied here can only turn a
+    working link into a dangling one.
+
+    The reference is anonymous so that building the index does not also
+    define a hyperlink target named after the index entry, which would sit
+    in the same namespace as the targets written by the documents
+    themselves.
+
+    Sphinx reports an entry it could not build a URI for as ``False``; such
+    an entry stays plain text.
+    """
+    if not uri:
+        return text
+    return '`%s <%s>`__' % (text, uri)
+
+
 def genindex_nodes(genindexentries):
     indexlabel = _('Index')
     indexunder = '=' * len(indexlabel)
@@ -462,9 +484,9 @@ def genindex_nodes(genindexentries):
         for entryname, entryvalue in entries:
             links, subitems = entryvalue[0:2]
             if links:
-                output.append('`%s <#%s>`_' % (entryname, nodes.make_id(links[0][1])))
+                output.append(index_link(entryname, links[0][1]))
                 for i, link in enumerate(links[1:]):
-                    output[-1] += ' `[%s] <#%s>`_ ' % (i + 1, nodes.make_id(link[1]))
+                    output[-1] += ' ' + index_link('[%s]' % (i + 1), link[1]) + ' '
                 output.append('')
             else:
                 output.append(entryname)
@@ -472,10 +494,12 @@ def genindex_nodes(genindexentries):
                 for subentryname, subentrylinks in subitems:
                     if subentrylinks:
                         output.append(
-                            '    `%s <%s>`_' % (subentryname, subentrylinks[0])
+                            '    ' + index_link(subentryname, subentrylinks[0][1])
                         )
                         for i, link in enumerate(subentrylinks[1:]):
-                            output[-1] += ' `[%s] <%s>`_ ' % (i + 1, link)
+                            output[-1] += (
+                                ' ' + index_link('[%s]' % (i + 1), link[1]) + ' '
+                            )
                         output.append('')
                     else:
                         output.append(subentryname)
